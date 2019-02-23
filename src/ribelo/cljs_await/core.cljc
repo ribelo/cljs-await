@@ -19,9 +19,10 @@
      ~@body))
 
 
-(defmacro <p [promise & {:keys [on-failure]}]
-  (let [c (chan)]
-    (-> promise
-        (.then #(put! c %))
-        (cond->
-          on-failure (.catch (fn [] (put! c false) (on-failure)))))))
+#?(:cljs
+   (defn <p [promise & {:keys [on-failure]}]
+         (let [c (chan)]
+              (-> promise
+                  (.then #(put! c %))
+                  (cond->
+                    on-failure (.catch (fn [] (put! c false) (on-failure))))))))
