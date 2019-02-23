@@ -25,4 +25,4 @@
          (.then #(a/put! out# %))
          (cond->
            ~on-failure (.catch (fn [] (a/put! out# false) (do ~@on-failure)))))
-     out#))
+     (a/<! out#)))
