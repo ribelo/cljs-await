@@ -8,4 +8,5 @@
            (-> promise
                (.then #(a/put! c %))
                (cond->
-                 on-failure (.catch (fn [] (a/put! c false) (on-failure)))))))
+                 on-failure (.catch (fn [] (a/put! c false) (on-failure)))))
+           c))

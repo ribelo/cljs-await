@@ -10,15 +10,15 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="Deps: org.clojure/core.specs.alpha:0.2.44" level="project" />
-    <orderEntry type="library" name="Deps: org.clojure/data.priority-map:0.0.7" level="project" />
-    <orderEntry type="library" name="Deps: org.clojure/core.cache:0.6.5" level="project" />
-    <orderEntry type="library" name="Deps: org.ow2.asm/asm-all:4.2" level="project" />
-    <orderEntry type="library" name="Deps: org.clojure/core.memoize:0.5.9" level="project" />
-    <orderEntry type="library" name="Deps: org.clojure/tools.reader:1.0.0-beta4" level="project" />
-    <orderEntry type="library" name="Deps: org.clojure/tools.analyzer:0.6.9" level="project" />
-    <orderEntry type="library" name="Deps: org.clojure/tools.analyzer.jvm:0.7.2" level="project" />
-    <orderEntry type="library" name="Deps: org.clojure/core.async:0.4.490" level="project" />
-    <orderEntry type="library" name="Deps: org.clojure/clojure:1.10.0" level="project" />
     <orderEntry type="library" name="Deps: org.clojure/spec.alpha:0.2.176" level="project" />
+    <orderEntry type="library" name="Deps: org.clojure/clojure:1.10.0" level="project" />
+    <orderEntry type="library" name="Deps: org.clojure/core.async:0.4.490" level="project" />
+    <orderEntry type="library" name="Deps: org.clojure/tools.analyzer.jvm:0.7.2" level="project" />
+    <orderEntry type="library" name="Deps: org.clojure/tools.analyzer:0.6.9" level="project" />
+    <orderEntry type="library" name="Deps: org.clojure/tools.reader:1.0.0-beta4" level="project" />
+    <orderEntry type="library" name="Deps: org.clojure/core.memoize:0.5.9" level="project" />
+    <orderEntry type="library" name="Deps: org.ow2.asm/asm-all:4.2" level="project" />
+    <orderEntry type="library" name="Deps: org.clojure/core.cache:0.6.5" level="project" />
+    <orderEntry type="library" name="Deps: org.clojure/data.priority-map:0.0.7" level="project" />
   </component>
 </module>
