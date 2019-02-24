@@ -3,10 +3,10 @@
 
 
 (defmacro async [& body]
-  `(let [out# (a/chan)]
+  `(let [out# (a/promise-chan)]
      (a/go
        (if-let [res# (do ~@body)]
-         (a/>! out# res#)
+         (a/put! out# res#)
          (a/close! out#)))
      out#))
 
