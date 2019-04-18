@@ -22,7 +22,7 @@
 (defmacro <p [promise & {:keys [on-failure]}]
   `(let [out# (a/chan)]
      (-> ~promise
-         (.then #(a/put! out# %))
+         (.then #(a/put! out# (or % :nil)))
          (cond->
            ~on-failure (.catch (fn [] (a/put! out# false) (do ~@on-failure)))))
      (a/<! out#)))
