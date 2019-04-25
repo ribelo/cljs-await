@@ -20,9 +20,9 @@
 
 
 (defmacro <p [promise & {:keys [on-failure]}]
-  `(let [out# (a/chan)]
+  `(let [out# (a/promise-chan)]
      (-> ~promise
-         (.then #(a/put! out# (or % :nil)))
+         (.then #(a/put! out# (or % false)))
          (cond->
            ~on-failure (.catch (fn [] (a/put! out# false) (do ~@on-failure)))))
      (a/<! out#)))
